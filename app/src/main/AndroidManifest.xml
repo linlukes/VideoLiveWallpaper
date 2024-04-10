@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="moe.cyunrei.videolivewallpaper.activity.SettingsActivity"
+            android:name="com.star.videolivewallpaper.activity.SettingsActivity"
             android:exported="false"
             android:label="@string/settings">
             <intent-filter>
@@ -31,7 +31,7 @@
         </activity>
 
         <service
-            android:name="moe.cyunrei.videolivewallpaper.service.VideoLiveWallpaperService"
+            android:name="com.star.videolivewallpaper.service.VideoLiveWallpaperService"
             android:exported="true"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_WALLPAPER"
@@ -45,7 +45,7 @@
         </service>
 
         <receiver
-            android:name="moe.cyunrei.videolivewallpaper.broadcast.BootBroadCast"
+            android:name="com.star.videolivewallpaper.broadcast.BootBroadCast"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
