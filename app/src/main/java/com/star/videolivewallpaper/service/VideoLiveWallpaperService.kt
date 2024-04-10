@@ -38,7 +38,7 @@ class VideoLiveWallpaperService : WallpaperService() {
                 setSurface(holder.surface)
                 setDataSource(videoFilePath)
                 isLooping = true
-                setVideoScalingMode(MediaPlayer.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING)
+                setVideoScalingMode(MediaPlayer.VIDEO_SCALING_MODE_SCALE_TO_FIT)
                 prepare()
                 start()
             }

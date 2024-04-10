@@ -14,6 +14,7 @@ import com.star.videolivewallpaper.service.VideoLiveWallpaperService
 import java.io.IOException
 
 class SettingsActivity : PreferenceActivity() {
+    @Deprecated("Deprecated in Java")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addPreferencesFromResource(R.xml.settings)
