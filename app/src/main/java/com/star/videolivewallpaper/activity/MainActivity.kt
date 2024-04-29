@@ -89,8 +89,8 @@ class MainActivity : Activity() {
         }.also { startActivityForResult(it, 1) }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        if (resultCode == RESULT_OK) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (resultCode == RESULT_OK && data != null) {
             val uri: Uri = data.data!!
             this.openFileOutput(
                 "video_live_wallpaper_file_path",
