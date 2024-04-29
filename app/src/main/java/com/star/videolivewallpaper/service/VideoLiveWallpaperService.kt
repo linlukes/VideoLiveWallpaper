@@ -5,6 +5,7 @@ import android.content.*
 import android.media.MediaPlayer
 import android.service.wallpaper.WallpaperService
 import android.view.SurfaceHolder
+import androidx.core.content.ContextCompat
 import java.io.File
 import java.io.IOException
 
@@ -29,7 +30,7 @@ class VideoLiveWallpaperService : WallpaperService() {
                         mediaPlayer!!.setVolume(1.0f, 1.0f)
                     }
                 }
-            }.also { broadcastReceiver = it }, intentFilter)
+            }.also { broadcastReceiver = it }, intentFilter, null, null, Context.RECEIVER_NOT_EXPORTED)
         }
 
         override fun onSurfaceCreated(holder: SurfaceHolder) {
@@ -81,7 +82,7 @@ class VideoLiveWallpaperService : WallpaperService() {
     }
 
     companion object {
-        const val VIDEO_PARAMS_CONTROL_ACTION = "moe.cyunrei.livewallpaper"
+        const val VIDEO_PARAMS_CONTROL_ACTION = "com.star.livewallpaper"
         private const val KEY_ACTION = "music"
         private const val ACTION_MUSIC_UNMUTE = false
         private const val ACTION_MUSIC_MUTE = true
