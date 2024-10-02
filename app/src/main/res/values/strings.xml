@@ -17,7 +17,7 @@
     <string name="enable">Enable</string>
     <string name="disable">Disable</string>
     <string name="version">Version</string>
-    <string name="version_name" translatable="false">0.1.4.4_200811_nano</string>
+    <string name="version_name" translatable="false">1.0</string>
     <!--preference-->
     <string name="preference_play_video_with_sound" translatable="false">play_video_with_sound</string>
     <string name="preference_hide_icon_from_launcher" translatable="false">hide_icon_from_launcher</string>
